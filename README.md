@@ -192,6 +192,10 @@ These are provided when calling `githubapp.NewClientCreator`:
 - `githubapp.WithClientMiddleware` allows customization of the
   `http.RoundTripper` used by all clients and is useful if you want to log
   requests or emit metrics about GitHub requests and responses.
+- `githubapp.WithSigner` sets a `ghinstallation.Signer` that signs the app
+  JWTs instead of the private key. Use it when the key is held in a hardware
+  security module or a cloud key management service that signs without
+  exposing the key. The private key may be empty when a signer is set.
 
 The library provides the following middleware:
 
