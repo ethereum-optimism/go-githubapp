@@ -1,0 +1,6 @@
+^\.github/fork/
+^\.github/workflows/fork-ci\.yaml$
+^README\.md$
+^go\.(mod|sum)$
+^githubapp/client_creator\.go$
+^githubapp/client_creator_signer_test\.go$
