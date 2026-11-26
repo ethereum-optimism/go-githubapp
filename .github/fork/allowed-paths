@@ -1,4 +1,5 @@
-^\.github/fork/
+^\.github/CODEOWNERS$
+^\.github/fork/(allowed-paths|check-history\.sh|upstream-tag)$
 ^\.github/workflows/fork-ci\.yaml$
 ^README\.md$
 ^go\.(mod|sum)$
